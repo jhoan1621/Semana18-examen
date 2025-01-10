@@ -63,9 +63,7 @@
         <div class="card mt-4">
             <div class="card-header bg-utp text-white d-flex justify-content-between align-items-center">
                 <h3 class="mb-0">Currículum Vitae Personal</h3>
-                <button  id="themeToggle" class="btn btn-outline-light">
-                    <i onclick="CambiarColor() " class="bi bi-moon-fill" ></i> Cambiar Tema a Oscuro
-                </button>
+                
             </div>
             <div class="card-body">
                 
@@ -83,9 +81,7 @@
                             <p><strong>Correo Electrónico:</strong> Jhoanmontanez803@gmail.com</p>
                             <p><strong>Facebook:</strong> <a href="https://www.facebook.com/pontojhoancito.montanezvillarreal">Perfil de Facebook</a></p>
                         </div>
-                        <div class="col-md-6">
-                           
-                        </div>
+                        
                     </div>
                 </section>
 
@@ -195,35 +191,12 @@
 
       
 
-        const form = document.getElementById('contactForm');
-        form.addEventListener('submit', (e) => {
-            if (!form.checkValidity()) {
-                e.preventDefault();
-                e.stopPropagation();
-            }
-            form.classList.add('was-validated');
-        });
 
         
-        const themeToggle = document.getElementById('themeToggle');
-    const themeIcon = themeToggle.querySelector('i');
-    
-    
-    themeToggle.addEventListener('click', () => {
-        
-        document.body.classList.toggle('dark-mode');
-        
        
-        if (document.body.classList.contains('dark-mode')) {
-            themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
-            themeToggle.classList.replace('btn-outline-light', 'btn-outline-warning');
-            themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i> Cambiar Tema a Claro';
-        } else {
-            themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
-            themeToggle.classList.replace('btn-outline-warning', 'btn-outline-light');
-            themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i> Cambiar Tema a Oscuro';
-        }
-    });
+    
+   
+    ;
 
    
         const observer = new IntersectionObserver(entries => {
